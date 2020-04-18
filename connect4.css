@@ -1,0 +1,99 @@
+/* game board table */
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#board {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#board td {
+  width: 75px;
+  height: 75px;
+  border: solid 2px white;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+.piece.p1 {
+  background-color: #ee5cac;
+  box-shadow: 0 0 5px #f40388, 0 0 25px #f40388, 0 0 50px #f40388,
+    0 0 200px #f40388;
+}
+
+.piece.p2 {
+  background-color: #03e9f4;
+  box-shadow: 0 0 5px #1370fa, 0 0 25px #1370fa, 0 0 50px #1370fa,
+    0 0 200px #1370fa;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 2px white;
+}
+
+#column-top td:hover {
+  background-color: rgb(136, 219, 58);
+  box-shadow: 0 0 5px rgb(123, 255, 0), 0 0 25px rgb(123, 255, 0),
+    0 0 50px rgb(123, 255, 0), 0 0 200px rgb(123, 255, 0);
+}
+
+.hidden {
+  display: none;
+}
+
+#button1,
+#button2 {
+  background-color: rgb(64, 64, 226);
+  box-shadow: 0 0 5px rgb(30, 30, 235), 0 0 25px rgb(30, 30, 235);
+  font-family: "Monoton", cursive;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: x-large;
+}
+
+#button1:hover {
+  background-color: rgb(30, 30, 235);
+}
+
+#button2:hover {
+  background-color: rgb(30, 30, 235);
+}
+
+.winner,
+.tie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 46rem;
+  height: 16rem;
+  left: 22.5%;
+  top: 15%;
+  background-color: rgb(173, 82, 226);
+  box-shadow: 0 0 5px rgb(130, 20, 194), 0 0 25px rgb(130, 20, 194),
+    0 0 50px rgb(130, 20, 194), 0 0 200px rgb(130, 20, 194);
+  border-radius: 20px;
+  font-family: "Monoton", cursive;
+  color: white;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(255, 255, 255, 0.5);
+  font-size: 100px;
+}

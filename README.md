@@ -5,4 +5,4 @@ Connect Four is a two-player connection board game in which the players take tur
 ![Connect-Four Gif](gifs/Connect-4.gif)
 
 ### PLay Connect-Four
-[Play Connect-Four](https://kgmeinecke.github.io/Connect-Four/)
+[    Connect-Four](https://kgmeinecke.github.io/Connect-Four/)

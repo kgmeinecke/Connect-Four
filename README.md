@@ -1,3 +1,3 @@
 # Connect-Four
 
-! [](Connect-4.gif)
+! [] (Connect-4.gif)
